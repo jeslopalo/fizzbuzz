@@ -13,12 +13,12 @@ import java.util.List;
 public class SimpleFizzBuzzCounter implements FizzBuzzCounter {
 
     @Override
-    public String countAsString() {
-        return StringUtils.join(countAsCollection(), " ");
+    public String asString() {
+        return StringUtils.join(asCollection(), " ");
     }
 
     @Override
-    public Collection<String> countAsCollection() {
+    public Collection<String> asCollection() {
         final List<String> count = new ArrayList<String>(100);
 
         for (int i = 1; i <= 100; i++) {

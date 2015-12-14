@@ -4,6 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.Collection;
 
+import static org.apache.commons.lang3.StringUtils.join;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -19,6 +20,6 @@ public class FizzBuzzAssertions {
 
 
     public static final void assertThatCountIsValid(final Collection<String> count) {
-        assertThatCountIsValid(StringUtils.join(count, " "));
+        assertThatCountIsValid(join(count, " "));
     }
 }

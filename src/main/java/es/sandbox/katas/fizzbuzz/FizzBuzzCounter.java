@@ -7,7 +7,7 @@ import java.util.Collection;
  */
 public interface FizzBuzzCounter {
 
-    String countAsString();
+    String asString();
 
-    Collection<String> countAsCollection();
+    Collection<String> asCollection();
 }
