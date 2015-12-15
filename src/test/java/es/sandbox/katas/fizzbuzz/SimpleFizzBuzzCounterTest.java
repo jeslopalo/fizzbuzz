@@ -12,6 +12,6 @@ public class SimpleFizzBuzzCounterTest {
 
     @Test
     public void it_should_count() {
-        assertThatCountIsValid(new SimpleFizzBuzzCounter().count());
+        assertThatCountIsValid(new SimpleFizzBuzzCounter(new FizzBuzzNumberCalculator()).count());
     }
 }

@@ -1,8 +1,5 @@
 package es.sandbox.katas.fizzbuzz;
 
-import es.sandbox.katas.fizzbuzz.FizzBuzzCounter;
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -12,37 +9,20 @@ import java.util.List;
  */
 public class SimpleFizzBuzzCounter implements FizzBuzzCounter {
 
+    private FizzBuzzNumberCalculator calculator;
+
+    SimpleFizzBuzzCounter(FizzBuzzNumberCalculator calculator) {
+        this.calculator = calculator;
+    }
+
     @Override
     public Collection<String> count() {
         final List<String> count = new ArrayList<String>(100);
 
         for (int i = 1; i <= 100; i++) {
-            count.add(i - 1, calculateFizzBuzz(i));
+            count.add(i - 1, this.calculator.fizzbuzzOf(i));
         }
 
         return count;
-    }
-
-    private String calculateFizzBuzz(int i) {
-        String element = "";
-
-        if (multipleOfThree(i)) {
-            element += "Fizz";
-        }
-        if (multipleOfFive(i)) {
-            element += "Buzz";
-        }
-        if (!multipleOfThree(i) && !multipleOfFive(i)) {
-            element += Integer.toString(i);
-        }
-        return element;
-    }
-
-    private boolean multipleOfFive(int number) {
-        return number % 5 == 0;
-    }
-
-    private boolean multipleOfThree(int number) {
-        return number % 3 == 0;
     }
 }
