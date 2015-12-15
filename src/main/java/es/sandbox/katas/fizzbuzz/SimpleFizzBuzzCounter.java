@@ -17,21 +17,25 @@ public class SimpleFizzBuzzCounter implements FizzBuzzCounter {
         final List<String> count = new ArrayList<String>(100);
 
         for (int i = 1; i <= 100; i++) {
-            String element = "";
-
-            if (multipleOfThree(i)) {
-                element += "Fizz";
-            }
-            if (multipleOfFive(i)) {
-                element += "Buzz";
-            }
-            if (!multipleOfThree(i) && !multipleOfFive(i)) {
-                element += Integer.toString(i);
-            }
-            count.add(i - 1, element);
+            count.add(i - 1, calculateFizzBuzz(i));
         }
 
         return count;
+    }
+
+    private String calculateFizzBuzz(int i) {
+        String element = "";
+
+        if (multipleOfThree(i)) {
+            element += "Fizz";
+        }
+        if (multipleOfFive(i)) {
+            element += "Buzz";
+        }
+        if (!multipleOfThree(i) && !multipleOfFive(i)) {
+            element += Integer.toString(i);
+        }
+        return element;
     }
 
     private boolean multipleOfFive(int number) {
