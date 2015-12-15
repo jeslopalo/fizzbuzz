@@ -1,4 +1,4 @@
-package es.sandbox.katas.fizzbuzz.simple;
+package es.sandbox.katas.fizzbuzz;
 
 import es.sandbox.katas.fizzbuzz.FizzBuzzCounter;
 import org.apache.commons.lang3.StringUtils;
