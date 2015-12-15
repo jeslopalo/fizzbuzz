@@ -2,7 +2,6 @@ package es.sandbox.katas.fizzbuzz;
 
 import static es.sandbox.katas.fizzbuzz.FizzBuzzAssertions.*;
 
-import es.sandbox.katas.fizzbuzz.SimpleFizzBuzzCounter;
 import org.junit.Test;
 
 /**
@@ -12,6 +11,6 @@ public class SimpleFizzBuzzCounterTest {
 
     @Test
     public void it_should_count() {
-        assertThatCountIsValid(new SimpleFizzBuzzCounter(new FizzBuzzNumberCalculator()).count());
+        assertThatCountIsValid(new SimpleFizzBuzzCounter(new FizzBuzzCalculator()).count());
     }
 }

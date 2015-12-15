@@ -3,7 +3,7 @@ package es.sandbox.katas.fizzbuzz;
 /**
  * Created by jeslopalo on 15/12/15.
  */
-class FizzBuzzNumberCalculator {
+class FizzBuzzCalculator {
 
     String fizzBuzzOf(final int number) {
         String element = "";

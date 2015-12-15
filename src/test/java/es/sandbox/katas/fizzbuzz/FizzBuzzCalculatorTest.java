@@ -5,13 +5,13 @@ import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class FizzBuzzNumberCalculatorTest {
+public class FizzBuzzCalculatorTest {
 
-    private FizzBuzzNumberCalculator sut;
+    private FizzBuzzCalculator sut;
 
     @Before
     public void setUp() throws Exception {
-        this.sut = new FizzBuzzNumberCalculator();
+        this.sut = new FizzBuzzCalculator();
     }
 
     @Test

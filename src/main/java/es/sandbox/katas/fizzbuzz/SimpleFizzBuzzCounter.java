@@ -9,9 +9,9 @@ import java.util.List;
  */
 public class SimpleFizzBuzzCounter implements FizzBuzzCounter {
 
-    private FizzBuzzNumberCalculator calculator;
+    private FizzBuzzCalculator calculator;
 
-    SimpleFizzBuzzCounter(FizzBuzzNumberCalculator calculator) {
+    SimpleFizzBuzzCounter(final FizzBuzzCalculator calculator) {
         this.calculator = calculator;
     }
 
