@@ -20,7 +20,7 @@ public class SimpleFizzBuzzCounter implements FizzBuzzCounter {
         final List<String> count = new ArrayList<String>(100);
 
         for (int i = 1; i <= 100; i++) {
-            count.add(i - 1, this.calculator.fizzbuzzOf(i));
+            count.add(i - 1, this.calculator.fizzBuzzOf(i));
         }
 
         return count;

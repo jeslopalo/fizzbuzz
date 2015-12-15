@@ -5,7 +5,7 @@ package es.sandbox.katas.fizzbuzz;
  */
 class FizzBuzzNumberCalculator {
 
-    String fizzbuzzOf(final int number) {
+    String fizzBuzzOf(final int number) {
         String element = "";
 
         if (multipleOfThree(number)) {
