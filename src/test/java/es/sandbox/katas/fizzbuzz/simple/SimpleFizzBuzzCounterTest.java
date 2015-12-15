@@ -10,12 +10,7 @@ import org.junit.Test;
 public class SimpleFizzBuzzCounterTest {
 
     @Test
-    public void it_should_count_as_a_string() {
-        assertThatCountIsValid(new SimpleFizzBuzzCounter().asString());
-    }
-
-    @Test
-    public void it_should_count_as_a_collection() {
-        assertThatCountIsValid(new SimpleFizzBuzzCounter().asCollection());
+    public void it_should_count() {
+        assertThatCountIsValid(new SimpleFizzBuzzCounter().count());
     }
 }
