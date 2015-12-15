@@ -7,10 +7,10 @@ import org.junit.Test;
 /**
  * Created by jeslopalo on 14/12/15.
  */
-public class SimpleFizzBuzzCounterTest {
+public class FizzBuzzCounterTest {
 
     @Test
     public void it_should_count() {
-        assertThatCountIsValid(new SimpleFizzBuzzCounter(new FizzBuzzCalculator()).count());
+        assertThatCountIsValid(new FizzBuzzCounter(new FizzBuzzCalculator()).count());
     }
 }
