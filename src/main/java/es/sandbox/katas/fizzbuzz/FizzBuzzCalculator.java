@@ -14,10 +14,14 @@ class FizzBuzzCalculator {
         if (multipleOfFive(number)) {
             element += "Buzz";
         }
-        if (!multipleOfThree(number) && !multipleOfFive(number)) {
+        if (notMultipleOfThreeOrFive(number)) {
             element += Integer.toString(number);
         }
         return element;
+    }
+
+    private boolean notMultipleOfThreeOrFive(int number) {
+        return !multipleOfThree(number) && !multipleOfFive(number);
     }
 
     private boolean multipleOfFive(int number) {
