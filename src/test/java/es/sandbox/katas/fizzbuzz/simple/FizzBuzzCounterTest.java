@@ -1,7 +1,9 @@
-package es.sandbox.katas.fizzbuzz;
+package es.sandbox.katas.fizzbuzz.simple;
 
 import static es.sandbox.katas.fizzbuzz.FizzBuzzAssertions.*;
 
+import es.sandbox.katas.fizzbuzz.simple.FizzBuzzCalculator;
+import es.sandbox.katas.fizzbuzz.simple.FizzBuzzCounter;
 import org.junit.Test;
 
 /**

@@ -1,4 +1,4 @@
-package es.sandbox.katas.fizzbuzz;
+package es.sandbox.katas.fizzbuzz.simple;
 
 /**
  * Created by jeslopalo on 15/12/15.

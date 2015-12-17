@@ -1,5 +1,6 @@
-package es.sandbox.katas.fizzbuzz;
+package es.sandbox.katas.fizzbuzz.simple;
 
+import es.sandbox.katas.fizzbuzz.simple.FizzBuzzCalculator;
 import org.junit.Before;
 import org.junit.Test;
 

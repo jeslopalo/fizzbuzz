@@ -1,4 +1,4 @@
-package es.sandbox.katas.fizzbuzz;
+package es.sandbox.katas.fizzbuzz.simple;
 
 import java.util.ArrayList;
 import java.util.Collection;
