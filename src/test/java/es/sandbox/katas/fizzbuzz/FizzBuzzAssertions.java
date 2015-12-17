@@ -1,7 +1,5 @@
 package es.sandbox.katas.fizzbuzz;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.Collection;
 
 import static org.apache.commons.lang3.StringUtils.join;
