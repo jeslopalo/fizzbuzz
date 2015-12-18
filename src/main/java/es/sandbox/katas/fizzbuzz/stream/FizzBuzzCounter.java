@@ -1,4 +1,4 @@
-package es.sandbox.katas.fizzbuzz.lambda;
+package es.sandbox.katas.fizzbuzz.stream;
 
 import java.util.Collection;
 import java.util.stream.Collectors;

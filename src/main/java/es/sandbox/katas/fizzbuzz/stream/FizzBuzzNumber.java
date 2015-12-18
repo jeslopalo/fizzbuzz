@@ -1,4 +1,4 @@
-package es.sandbox.katas.fizzbuzz.lambda;
+package es.sandbox.katas.fizzbuzz.stream;
 
 /**
  * Created by jeslopalo on 17/12/15.

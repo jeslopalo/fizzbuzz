@@ -1,5 +1,6 @@
-package es.sandbox.katas.fizzbuzz.lambda;
+package es.sandbox.katas.fizzbuzz.stream;
 
+import es.sandbox.katas.fizzbuzz.stream.FizzBuzzCounter;
 import org.junit.Test;
 
 import static es.sandbox.katas.fizzbuzz.FizzBuzzAssertions.assertThatCountIsValid;
